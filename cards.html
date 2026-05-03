@@ -2,42 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" a href="cards.css">
-        <title>Responsive Cards</title>
+        <title>ResponsiveCards</title>
     </head>
     <body>
-    
-    
-    
-<!-- create three responsive, accessible cards with multiple animated elements (via the transition property)
-Using CSS Grid and media queries, you'll need to display the cards in a single column (with three rows)
-at smaller screen sizes and display them in three columns (one row) on larger screen sizes.
-In your animation-class repository, create a file called cards.html. Give the page a title and link the stylesheet you already created.
-We'll be adding to it for this assignment, and you can use the classes you already created to center the grid on the page.
-Center a single div on the page. This div will be the container for our grid. Inside this div, create three divs (each with a class of "card")
-that contain a heading (h3), a few lines of text for a description, and an image. The heading and images of each div should be unique.
-The heading can be whatever you want, you just need to differentiate the cards. You can use lorem ipsum for the description.
-You can get any images you want from UnsplashLinks to an external site
-In addition to unique headings and images, each card will need to have a different background color overlay
-Give you .card class the property position: relative;. Target the img element inside the .card class and give it the
-properties position: absolute;, inset: 0;, height: 100%;, width:100%;, object-fit: cover;, and z-index: -2;. This will create a
-background image that can utilize the "alt" attribute for increased accessibility (and CSS control).
-Target the .card::before pseudo-element and give it the properties position: absolute;, inset: 0;, height: 100%;, width:100%;, and
-z-index: -1;. Add a background-color property with any rgba([red], [green], [blue], [alpha]) value you'd like.
-This will create a color overlay on top of the image. Ideally, you'll want the alpha channel to be low or zero.
-You'll be adding the color on the :hover pseudo-class. Style the rest of the card elements however you like.
-The text should not be visible in its initial state. We should only see the image and the initial background color overlay of each card.
-Targeting the .card:hover pseudo-class, you'll need to reveal the text and separate it from the image by raising the background overlay
-alpha channel. All of this should happen when you hover over the card div, not the elements within the card.
-Use the transition property to animate the hover changes. Try different durations, delays, and timing-functions for different properties
-
-Deliverables
-You'll need to create three cards, each with a separate image, background color overlay, and heading in a file called cards.html
-in your animation-class repository. -->
-    
-    
-    
-    
-    
+        <section class="container">
+            <div class="card grid">
+                <div class="img_box">
+                    <img src="card-images/unsplash-hiking.jpg" class="img" alt="People hiking">
+                        <div class="card_content">
+                            <h1 class="arrow">⏶</h1>
+                            <h3 class="header">Spend your days hiking in the Capatian Mountains!</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tempore aperiam blanditiis. Quisquam quasi assumenda aliquid enim itaque blanditiis molestias quidem dolor libero ratione eos expedita, voluptates accusantium dolores provident.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="card2">
+                <div class="img_box2">
+                   <img src="card-images/unsplash-kyacking.jpg" class="img2" alt="People kayacking on the open water">
+                    <div class="card_content2">
+                        <h3 class="header2">Kayak on the open waters!</h3>
+                        <p class="description2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tempore aperiam blanditiis. Quisquam quasi assumenda aliquid enim itaque blanditiis molestias quidem dolor libero ratione eos expedita, voluptates accusantium dolores provident.</p>
+                        <a href="#">Book Now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="img_box3">
+                    <img src="card-images/unsplash-aurora-borealis.jpg" class="img3" alt="Aurora Berealis">
+                        <div class="card_content3">
+                            <h3 class="header3">Catch a look at Finlands open skies!</h3>
+                            <p class="description3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tempore aperiam blanditiis. Quisquam quasi assumenda aliquid enim itaque blanditiis molestias quidem dolor libero ratione eos expedita, voluptates accusantium dolores provident.</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
     </body>
 </html>
